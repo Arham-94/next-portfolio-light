@@ -1,0 +1,61 @@
+.certificateDisplayContainer {
+  padding: var(--sp-sm);
+  width: 100%;
+  max-width: 700px;
+  position: relative;
+}
+.certificateDisplayContainer:hover {
+  transform: scale(1.01);
+}
+.certificateTitle {
+  text-align: center;
+  /* margin: 1rem 0; */
+  margin-bottom: 1rem;
+}
+.certificateDisplay {
+  height: 420px;
+  width: 100%;
+  /* aspect-ratio: 16 / 9; */
+  position: relative;
+}
+
+.certificateCover {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 234;
+}
+
+.certificateLeftBtn {
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  translate: -50%, -50%;
+}
+.certificateRightBtn {
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  translate: -50%, -50%;
+}
+
+/* --------------responsiveness--------------------- */
+@media (max-width: 600px) {
+  .certificateDisplay {
+    height: 270px;
+  }
+  .certificateTitle {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: aliceblue;
+  }
+}
+
+@media (max-width: 420px) {
+  .certificateDisplay {
+    height: 200px;
+  }
+}

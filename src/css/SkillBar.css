@@ -1,0 +1,36 @@
+.skillBar {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+}
+.skillName {
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.skillNameHover {
+  height: fit-content;
+  width: fit-content;
+  padding: 3px 5px;
+  position: absolute;
+  top: -30px;
+  left: 0;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: none;
+  border-radius: 2px;
+}
+.skillName:hover .skillNameHover {
+  display: block;
+}
+.skillMainHealth {
+  height: 5px;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #000;
+  overflow: hidden;
+}
+.skillHealth {
+  height: 100%;
+  background: var(--color-main);
+  max-width: 100%;
+}

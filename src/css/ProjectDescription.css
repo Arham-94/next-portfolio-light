@@ -1,0 +1,28 @@
+/* .projectDescHeading {
+
+} */
+.projectDesc {
+  max-width: 90%;
+  line-height: 1.6;
+  margin-top: var(--sp-sm);
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.projectHeadline {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.projectBtns {
+  display: flex;
+  gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .projectDesc {
+    max-width: 100%;
+    width: 100%;
+  }
+}

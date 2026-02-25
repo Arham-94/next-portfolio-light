@@ -1,0 +1,44 @@
+.navbar {
+  height: 50px;
+  width: fit-content;
+  max-width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-sm);
+
+  padding: 0 calc(var(--sp-sm) * 2);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  position: fixed; /* 🔥 screen par lock */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* 🔥 scroll ke baad */
+.navbarScrolled {
+  background: rgba(0, 0, 0, 0.6); /* bg change */
+  backdrop-filter: blur(12px); /* glass effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.navlink {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-bold);
+  transition: 0.4s;
+}
+
+.navlink:hover {
+  background: var(--color-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transform: translateY(-3px);
+}

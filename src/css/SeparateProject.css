@@ -1,0 +1,32 @@
+.projectPage {
+  background: #1a0033;
+  height: 100dvh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -100;
+}
+.blackOverlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100dvh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: -50;
+}
+
+.projectContainer {
+  display: flex;
+  gap: var(--sp-sm);
+  width: 100%;
+  margin-top: var(--sp-sm);
+}
+
+.videoDesc {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+  width: auto;
+}

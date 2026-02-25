@@ -1,0 +1,49 @@
+.ImageVideoContainer {
+  height: 65vh;
+  width: 100%;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  /* gap: 1rem;*/
+  padding: 1rem;
+}
+.imageSection {
+  width: 70%;
+  height: 100%;
+  position: relative;
+  transition: 0.5s;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.videoSection {
+  height: 100%;
+  width: fit-content;
+  padding: var(--sp-sm);
+  box-sizing: content-box;
+  transition: 0.3s;
+}
+.videoSection:hover,
+.imageSection:hover {
+  transform: scale(1.01);
+}
+.videoSection video {
+  height: 100%;
+  width: auto;
+}
+
+@media (max-width: 800px) {
+  .ImageVideoContainer {
+    height: 200px;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+  .videoSection {
+    padding: 0.5rem;
+  }
+  .imageSection {
+    height: 100%;
+    width: 100%;
+  }
+}

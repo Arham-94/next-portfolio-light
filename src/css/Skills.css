@@ -1,0 +1,27 @@
+.skillsBlocks {
+  display: flex;
+  justify-content: center;
+  gap: var(--sp-sm);
+  flex-wrap: wrap;
+}
+.skillsBlock {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: var(--sp-sm);
+}
+.skillsBlock:hover {
+  transform: translateY(-8px);
+}
+.skillType {
+  margin-bottom: var(--sp-sm);
+  text-align: center;
+}
+
+/* -------------responsiveness---------------- */
+
+@media (max-width: 800px) {
+  .skillsBlock {
+    width: 100%;
+  }
+}

@@ -1,0 +1,20 @@
+.projectSkills {
+  padding: var(--sp-sm);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 400px;
+  width: fit-content;
+  transition: 0.3s;
+}
+.projectSkills:hover {
+  transform: scale(1.03);
+}
+@media (max-width: 800px) {
+  .projectSkills {
+    gap: 0.5rem;
+    max-width: 100%;
+    width: 100%;
+  }
+}

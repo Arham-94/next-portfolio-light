@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  color: var(--color-default);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ------------wholePage---------------------- */
+
+.wholePage {
+  padding: 0 var(--sp-lg);
+}
+
+/* ----------------variables------------------ */
+
+:root {
+  /* colors */
+  --color-main: linear-gradient(135deg, #5f2eea, #a84fd5, #f24e8e);
+  --color-mainConic: #5f2eea, #a84fd5, #f24e8e, #5f2eea;
+  --color-default: #ffffff;
+  --color-text: #fffff0;
+  --color-glassHover: #f24e8e;
+
+  /* font-size */
+  --fs-bigHeading: 5rem;
+  --fs-heading: 2rem;
+  --fs-subHeading: 1.5rem;
+  --fs-text: 1rem;
+
+  /* font-weight */
+  --fw-bolder: 800;
+  --fw-bold: 700;
+  --fw-normal: 400;
+
+  /* spacing */
+  --sp-lg: 5rem;
+  --sp-md: 3rem;
+  --sp-sm: 1.5rem;
+}
+
+/* -----------------backgrounds-------------------- */
+
+.glass {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  transition: 0.3s;
+}
+
+/* ------------------heading & texts--------------------- */
+
+.gradientText {
+  background: var(--color-main);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bigHeading {
+  font-size: var(--fs-bigHeading);
+  font-weight: var(--fw-bolder);
+}
+
+.heading {
+  font-size: var(--fs-heading);
+  font-weight: var(--fw-bolder);
+}
+
+.subHeading {
+  font-size: var(--fs-subHeading);
+  font-weight: var(--fw-bold);
+  margin-bottom: var(--sp-sm);
+}
+
+.normalText {
+  font-size: var(--fs-text);
+  font-weight: var(--fw-normal);
+  line-height: 1.7rem;
+}
+
+/* --------------buttons------------------ */
+
+/* glass btn */
+
+.glassBtn {
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 30px;
+  box-shadow: 0 0 2px rgb(255 255 255 / 0.7) inset,
+    0px 0px 15px 0px rgb(0 0 0 / 0%);
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 0.35) -94.09%,
+    rgba(255, 255, 255, 0) 154.53%
+  );
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.glassBtn:hover {
+  transform: scale(1.05);
+}
+
+/* gradient btn */
+
+.gradientBtn {
+  padding: 0.5rem 1rem;
+  max-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 30px;
+  background: var(--color-main);
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  position: relative;
+}
+.gradientBtn:hover {
+  transform: scale(1.05);
+}
+
+.tinyBtn {
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 3s;
+  cursor: pointer;
+  z-index: 300;
+}
+.tinyBtn:hover {
+  background: var(--color-main);
+  border: none;
+  transform: scale(1.01);
+}
+
+/* -----------------section----------------------- */
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 50vh;
+  margin: var(--sp-md) 0;
+}
+.sectionHeading {
+  margin-bottom: var(--sp-md);
+}
+
+/* --------------------responsiveness------------------------- */
+
+@media (max-width: 400px) {
+  .wholePage {
+    padding: 0 var(--sp-sm);
+  }
+  :root {
+    /* colors */
+    --color-main: linear-gradient(135deg, #5f2eea, #a84fd5, #f24e8e);
+    --color-mainConic: #5f2eea, #a84fd5, #f24e8e, #5f2eea;
+    --color-default: #ffffff;
+    --color-text: #fffff0;
+
+    /* font-size */
+    --fs-bigHeading: 2rem;
+    --fs-heading: 1.5rem;
+    --fs-subHeading: 1rem;
+    --fs-text: 0.9rem;
+
+    /* font-weight */
+    --fw-bolder: 700;
+    --fw-bold: 500;
+    --fw-normal: 400;
+
+    /* spacing */
+    --sp-lg: 3rem;
+    --sp-md: 2rem;
+    --sp-sm: 1rem;
+  }
+}
+
+/* --------------------tablets---------------- */
+
+@media (min-width: 400px) and (max-width: 800px) {
+  .wholePage {
+    padding: 0 var(--sp-md);
+  }
+  :root {
+    /* colors */
+    --color-main: linear-gradient(135deg, #5f2eea, #a84fd5, #f24e8e);
+    --color-mainConic: #5f2eea, #a84fd5, #f24e8e, #5f2eea;
+    --color-default: #ffffff;
+    --color-text: #fffff0;
+
+    /* font-size */
+    --fs-bigHeading: 3.5rem;
+    --fs-heading: 2rem;
+    --fs-subHeading: 1.8rem;
+    --fs-text: 1.01rem;
+
+    /* font-weight */
+    --fw-bolder: 700;
+    --fw-bold: 600;
+    --fw-normal: 400;
+
+    /* spacing */
+    --sp-lg: 4rem;
+    --sp-md: 2.3rem;
+    --sp-sm: 1rem;
+  }
+}
