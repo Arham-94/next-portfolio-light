@@ -7,7 +7,7 @@ export const projects = [
       "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/cvinsight1.png",
     github: "",
     link: "",
-    // video: "/projectVideos/cvinsight.mp4",
+    video: "https://www.youtube.com/watch?v=hRRyyFY3FWY",
     skills: "html5,css3,javascript,reactjs,python,django",
   },
   {
@@ -29,13 +29,13 @@ export const projects = [
       "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/musicbox.png",
     github: "",
     link: "",
-    // video: "/projectVideos/musicbox.mp4",
+    video: "https://youtu.be/z6aOQeDsoAQ",
     skills: "html5,css3,javascript,reactjs,python,django",
   },
   {
-    name: "Blogger With Authentication",
+    name: "BlogVerse With Authentication",
     description:
-      "Blogger Web App is a feature-rich blogging platform designed for creating, reading, and engaging with content effortlessly. It allows users to write blogs, explore posts from others, and discover relevant articles through an intelligent search system. With secure authentication, users can sign up, sign in, and manage their profiles. The app also supports full blog management, including editing, updating, and deleting posts. Readers can interact by leaving comments, liking posts, and engaging within the community, making the platform both expressive and social. @Key Features: @Create, edit, update, and delete blogs with ease @Search and discover relevant blogs instantly @User authentication with secure sign-up and sign-in @Like and comment on blogs to boost engagement @Clean and user-friendly writing interface @Responsive design for reading on any device @Ideal for personal blogging, community discussions, and content sharing",
+      "BlogVerse Web App is a feature-rich blogging platform designed for creating, reading, and engaging with content effortlessly. It allows users to write blogs, explore posts from others, and discover relevant articles through an intelligent search system. With secure authentication, users can sign up, sign in, and manage their profiles. The app also supports full blog management, including editing, updating, and deleting posts. Readers can interact by leaving comments, liking posts, and engaging within the community, making the platform both expressive and social. @Key Features: @Create, edit, update, and delete blogs with ease @Search and discover relevant blogs instantly @User authentication with secure sign-up and sign-in @Like and comment on blogs to boost engagement @Clean and user-friendly writing interface @Responsive design for reading on any device @Ideal for personal blogging, community discussions, and content sharing",
     cover:
       "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/blogverse.png",
     github: "",

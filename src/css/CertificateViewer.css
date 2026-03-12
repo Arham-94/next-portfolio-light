@@ -1,0 +1,23 @@
+.certificateViewerBox {
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.certificateInnerBox {
+  padding: 0.5rem;
+  border-radius: 0;
+  border: 2px solid #ca0df0;
+}
+.certificateViewerCloser {
+  position: absolute;
+  top: 30px;
+  right: 50px;
+}

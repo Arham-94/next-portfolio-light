@@ -1,12 +1,9 @@
 .ImageVideoContainer {
-  height: 65vh;
-  width: 100%;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-  /* gap: 1rem;*/
-  padding: 1rem;
+  height: 80vh;
+  width: auto;
+  /* padding: 1rem; */
 }
+
 .imageSection {
   width: 70%;
   height: 100%;
@@ -16,20 +13,28 @@
   border-radius: 10px;
   overflow: hidden;
 }
+
 .videoSection {
   height: 100%;
-  width: fit-content;
+  width: 100%;
   padding: var(--sp-sm);
-  box-sizing: content-box;
+  box-sizing: border-box;
   transition: 0.3s;
 }
+
 .videoSection:hover,
 .imageSection:hover {
   transform: scale(1.01);
 }
-.videoSection video {
+
+/* Works for both video and YouTube iframe */
+.videoSection video,
+.videoSection iframe {
+  width: 100%;
   height: 100%;
-  width: auto;
+  border-radius: 10px;
+  object-fit: contain;
+  border: none;
 }
 
 @media (max-width: 800px) {
@@ -37,11 +42,12 @@
     height: 200px;
     width: 100%;
     padding: 0;
-    border: none;
   }
+
   .videoSection {
     padding: 0.5rem;
   }
+
   .imageSection {
     height: 100%;
     width: 100%;

@@ -4,6 +4,12 @@
   gap: var(--sp-sm);
   padding: var(--sp-sm);
 }
+.projectBox {
+  display: flex;
+  justify-content: center;
+  gap: var(--sp-sm);
+  flex-wrap: wrap;
+}
 .projects:hover {
   transform: scale(1.01);
 }
@@ -19,7 +25,7 @@
 }
 .projectLinks {
   display: flex;
-  gap: var(--sp-sm);
+  gap: 0.5rem;
 }
 .projectLink {
   height: 30px;

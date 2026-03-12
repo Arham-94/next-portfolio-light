@@ -12,6 +12,7 @@ import {
   FaArrowAltCircleLeft,
   FaPlay,
 } from "react-icons/fa";
+import ProjectCard from "./ProjectCard";
 
 const ProjectsSection = () => {
   const [projectNumber, setProjectNumber] = useState(0);
@@ -29,7 +30,7 @@ const ProjectsSection = () => {
   return (
     <div className="section" id="projects">
       <div className="heading sectionHeading gradientText ">Projects Done.</div>
-      <div className="glass projects">
+      {/* <div className="glass projects">
         <div className="projectContent">
           <div className="heading">
             {projectNumber < 9 && 0}
@@ -76,6 +77,21 @@ const ProjectsSection = () => {
             <Image src={projectShown.cover} alt="" fill />
           </div>
         </div>
+      </div> */}
+      <div className="projectBox">
+        {projects.map((project, index) => (
+          <ProjectCard
+            key={index}
+            image={project.cover}
+            title={project.name}
+            description={project.description}
+            onReadMore={`/project/${index + 1}`}
+            skills={project.skills}
+            projectGithub={project.github}
+            projectLink={project.link}
+            projectVideo={project.video}
+          />
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 .projectSkills {
-  padding: var(--sp-sm);
+  padding: var(--sp-sm) 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

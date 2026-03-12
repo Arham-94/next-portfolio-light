@@ -11,8 +11,7 @@ const ProjectSkills = ({ skills }) => {
 
   return (
     <>
-      <span className="heading">Tech Used</span>
-      <div className="glass projectSkills">
+      <div className="projectSkills">
         {matchedIcons.map((matchIcon, index) => (
           <matchIcon.skillIcon key={index} size={25} />
         ))}

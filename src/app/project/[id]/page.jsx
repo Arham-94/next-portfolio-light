@@ -10,9 +10,7 @@ export default async function Page({ params }) {
   const projectShown = projects[id - 1];
   return (
     <>
-      <div className="projectPage"></div>
-      {/* <div className="blackOverlay"></div> */}
-      {/* <Background></Background> */}
+      <Background />
       <div className="wholePage ">
         <div className="projectContainer">
           <div className="videoDesc">
@@ -26,6 +24,7 @@ export default async function Page({ params }) {
               projectName={projectShown.name}
               projectDesc={projectShown.description}
             />
+            <span className="heading">Tech Used</span>
             <ProjectSkills skills={projectShown.skills || ""} />
           </div>
         </div>

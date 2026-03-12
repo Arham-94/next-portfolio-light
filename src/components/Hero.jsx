@@ -7,11 +7,11 @@ import Link from "next/link";
 
 const Hero = () => {
   const conatacts = [
-    // {
-    //   name: "LinkedIn",
-    //   Icon: FaLinkedin,
-    //   link: "/",
-    // },
+    {
+      name: "LinkedIn",
+      Icon: FaLinkedin,
+      link: "https://www.linkedin.com/in/arham-khan-36958a370/",
+    },
   ];
 
   return (
@@ -26,7 +26,11 @@ const Hero = () => {
           </Link>
           {conatacts.map((contact, index) => (
             <div key={index}>
-              <Link className="tinyBtn glass" href={contact.link}>
+              <Link
+                className="tinyBtn glass"
+                target="_blank"
+                href={contact.link}
+              >
                 <contact.Icon size={18} />
               </Link>
             </div>
@@ -40,7 +44,7 @@ const Hero = () => {
         <div className="heroImageOverlay">
           <Image
             src={basicInfo.heroImage}
-            alt=""
+            alt="heroImage"
             fill
             className="heroActualImage"
           />
