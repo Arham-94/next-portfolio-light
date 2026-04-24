@@ -1,10 +1,11 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "@/css/Certificate.css";
 import Image from "next/image";
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from "react-icons/fa";
 import { certificates } from "@/db/certificates";
 import CertificateViewer from "./CertificateViewer";
+import CustomLoader from "./CustomLoader";
 
 const Certificate = () => {
   if (!certificates || certificates.length === 0) return null;
@@ -12,6 +13,8 @@ const Certificate = () => {
   const [certificateIndex, setCertificateIndex] = useState(0);
   const [isActiveCertificateViewerBox, setIsActiveCertificateViewerBox] =
     useState(false);
+
+  const [loading, setLoading] = useState(true);
 
   const certificateShown = certificates[certificateIndex];
 
@@ -24,6 +27,11 @@ const Certificate = () => {
     setCertificateIndex((prev) =>
       prev - 1 < 0 ? certificates.length - 1 : prev - 1,
     );
+
+  // ✅ Reset loader when certificate changes
+  useEffect(() => {
+    setLoading(true);
+  }, [certificateIndex]);
 
   return (
     <>
@@ -64,11 +72,17 @@ const Certificate = () => {
           </div>
 
           <div className="certificateDisplay">
-            <Image
-              src={certificateShown.path}
-              alt={certificateShown.title}
-              fill
-            />
+            {loading && <CustomLoader />}
+
+            {certificateShown.path && (
+              <Image
+                key={certificateShown.path} // 🔥 important
+                src={certificateShown.path}
+                alt={certificateShown.title}
+                fill
+                onLoad={() => setLoading(false)} // ✅ correct trigger
+              />
+            )}
           </div>
         </div>
       </div>
