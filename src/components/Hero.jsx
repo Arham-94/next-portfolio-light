@@ -6,7 +6,7 @@ import { FaLinkedin } from "react-icons/fa";
 import Link from "next/link";
 
 const Hero = () => {
-  const conatacts = [
+  const contacts = [
     {
       name: "LinkedIn",
       Icon: FaLinkedin,
@@ -24,7 +24,10 @@ const Hero = () => {
           <Link href="/#projects" className="gradientBtn">
             Checkout Projects
           </Link>
-          {conatacts.map((contact, index) => (
+          <a href={basicInfo.resume} download>
+            <button className="gradientBtn">Download CV</button>
+          </a>
+          {contacts.map((contact, index) => (
             <div key={index}>
               <Link
                 className="tinyBtn glass"
