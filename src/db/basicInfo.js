@@ -4,5 +4,5 @@ export const basicInfo = {
   shortInfo:
     "I’m a Full-Stack Web developer with experience creating modern and functional web applications. I enjoy turning ideas into smooth interfaces and building solid back-end logic. Every project helps me sharpen my skills and deliver better results.",
   heroImage: "/hero.png",
-  resume: "/ArhamKhanCV.pdf",
+  resume: "/ArhamkhanResume.pdf",
 };

@@ -24,9 +24,11 @@ const Hero = () => {
           <Link href="/#projects" className="gradientBtn">
             Checkout Projects
           </Link>
-          <a href={basicInfo.resume} download>
-            <button className="gradientBtn">Download CV</button>
-          </a>
+          {basicInfo.resume && (
+            <a href={basicInfo.resume} download>
+              <button className="gradientBtn">Download CV</button>
+            </a>
+          )}
           {contacts.map((contact, index) => (
             <div key={index}>
               <Link
