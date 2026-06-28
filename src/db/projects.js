@@ -18,11 +18,22 @@ export const projects = [
       "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/tcms2.png",
     github: "",
     link: "",
-    // video: "/projectVideos/tcms.mp4",
+    video: "https://youtu.be/c9m_daQzlyE",
     skills: "html5,css3,javascript,reactjs,nextjs,python,fastapi,opencv",
   },
   {
-    name: "Music Webplayer like Spotify",
+    name: "AI Notes Summarizer",
+    description:
+      "AI Powered Notes Summarizer is an intelligent web application that transforms lengthy documents, PDFs, articles, or study notes into concise, easy-to-understand summaries using advanced Artificial Intelligence. It helps students, professionals, and researchers save time by extracting the most important information while preserving the core meaning of the content. The system generates clear, structured summaries within seconds, improving productivity, learning efficiency, and content comprehension. @KEY FEATURES: @Summarize lengthy notes, PDFs, and documents instantly using AI @Generate accurate, concise, and easy-to-read summaries @Preserves key concepts while eliminating unnecessary details @Fast AI-powered processing with high-quality results @User-friendly interface for quick uploads and instant summaries @Ideal for students, researchers, educators, and professionals @Enhances learning, revision, and productivity with intelligent summarization.",
+    cover:
+      "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/notesSummarizerThumbnail.png",
+    github: "",
+    link: "",
+    video: "https://youtu.be/twdt1LVZ_Qk",
+    skills: "html5,css3,javascript,reactjs,nextjs,python,fastapi",
+  },
+  {
+    name: "Musicbox like Spotify",
     description:
       "Music Web Player is a sleek and modern music-streaming platform inspired by Spotify, designed to offer a smooth and immersive listening experience. It allows users to search for songs and mark their favorite songs. With powerful API integration, dynamic filtering, and a clean UI, the player delivers fast performance, making music discovery effortless and enjoyable. @Key Features: @Stream and play songs with a smooth, responsive UI @Search songs instantly with smart searching @Mark and manage favorite tracks @Seamless API integration for real-time music data @Create personalized listening experiences @Optimized for performance and modern web standards",
     cover:
@@ -33,14 +44,14 @@ export const projects = [
     skills: "html5,css3,javascript,reactjs,python,django",
   },
   {
-    name: "BlogVerse With Authentication",
+    name: "BlogVerse",
     description:
       "BlogVerse Web App is a feature-rich blogging platform designed for creating, reading, and engaging with content effortlessly. It allows users to write blogs, explore posts from others, and discover relevant articles through an intelligent search system. With secure authentication, users can sign up, sign in, and manage their profiles. The app also supports full blog management, including editing, updating, and deleting posts. Readers can interact by leaving comments, liking posts, and engaging within the community, making the platform both expressive and social. @Key Features: @Create, edit, update, and delete blogs with ease @Search and discover relevant blogs instantly @User authentication with secure sign-up and sign-in @Like and comment on blogs to boost engagement @Clean and user-friendly writing interface @Responsive design for reading on any device @Ideal for personal blogging, community discussions, and content sharing",
     cover:
       "https://ritakdqaklifnxvexgxf.supabase.co/storage/v1/object/public/projectsMedia/blogverse.png",
     github: "",
     link: "",
-    video: "",
+    video: "https://youtu.be/Ukf3Rsk5s4w",
     skills: "html5,css3,javascript,reactjs,python,django",
   },
 ];
